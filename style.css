@@ -38,8 +38,8 @@ input{
 }
 .bt-2{
     background-color: red;
-    border: 1px red;
-    margin-top: 15px;
+    border: 1px rgba(14, 243, 14, 0.801);
+    margin-top: 20px;
     color:white;
     height: 30px;
     border-radius:3px;
@@ -49,20 +49,19 @@ input{
     background-color: rgb(177, 3, 3);
 }
 
-.list{
+.list,.labels{
     width: 80%;
     margin: auto;
     display: grid;
-    grid-template-columns: 70vw 10vw;
-    row-gap: 5px;
+    grid-template-columns: 40vw 15vw  15vw 10vw;
 }
 
-.itm{
+.itm,.datz,.time{
     border-bottom: 1px dotted grey;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
-@media(max-width:470px){
+@media(max-width:680px){
     input{
         width:100px;
     }
@@ -72,5 +71,9 @@ input{
     label,#bt-1,input{
         padding: 4px;
         margin-bottom: 12px;
+    }
+    .list{
+        
+        grid-template-columns: 40vw 15vw  15vw 10vw;
     }
 }
